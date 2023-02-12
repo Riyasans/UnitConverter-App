@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".WeightActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/registerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:text="Weight"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+        <EditText
+            android:id="@+id/weight_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttons_background"
+            android:gravity="center"
+            android:hint="Enter Unit"
+            android:inputType="numberDecimal"
+
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="30dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="right">
+
+                <RadioButton
+                    android:id="@+id/mltogr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/buttons_background"
+                    android:padding="12dp"
+                    android:text="MiliGram to Gram"
+                    android:textColor="@color/teal_700" />
+
+                <RadioButton
+                    android:id="@+id/mltokg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/buttons_background"
+                    android:padding="12dp"
+                    android:text="MiliGram to KiloGram"
+                    android:textColor="@color/teal_700" />
+
+                <RadioButton
+                    android:id="@+id/grtoml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/buttons_background"
+                    android:padding="12dp"
+                    android:text="Gram to MiliGram"
+                    android:textColor="@color/teal_700" />
+
+                <RadioButton
+                    android:id="@+id/grtokl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/buttons_background"
+                    android:padding="12dp"
+                    android:text="Gram to KiloGram"
+                    android:textColor="@color/teal_700" />
+
+
+                <RadioButton
+                    android:id="@+id/kgtoml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/buttons_background"
+                    android:padding="12dp"
+                    android:text="KiloGram to MiliGram"
+                    android:textColor="@color/teal_700" />
+
+                <RadioButton
+                    android:id="@+id/kgtogr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/buttons_background"
+                    android:padding="12dp"
+                    android:text="KiloGram to Gram"
+                    android:textColor="@color/teal_700" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bt_convert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/buttons_background"
+                android:layout_marginEnd="32dp"
+                android:textColor="@color/white"
+                android:text="Convert"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/answer_tv"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/buttons_background"
+                android:gravity="center"
+                android:text="Answer"
+                android:textColor="@color/teal_700"
+                android:textSize="30dp"
+                app:circularflow_radiusInDP="4dp"></TextView>
+        </LinearLayout>
+
+
+</RelativeLayout>

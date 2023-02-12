@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/teal_700"
+    tools:context=".SpeedActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:text="Speed"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/temp_ed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttons_background"
+            android:gravity="center"
+            android:hint="Enter Unit"
+            android:inputType="numberDecimal"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="30dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="right">
+
+            <!--suppress AndroidUnresolvableTag -->
+            <RadioButton
+                android:id="@+id/kmsTOms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilometer/second toMeter/second"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700" />
+
+            <RadioButton
+                android:id="@+id/msTOKms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meter/second to Kilometer/second"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700" />
+
+            <RadioButton
+                android:id="@+id/msTOkmh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Meter/second to  Kilometer/hour"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700" />
+
+            <RadioButton
+                android:id="@+id/KsTOmh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilometer/second to  Mile/hour"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700" />
+
+
+            <RadioButton
+                android:id="@+id/kmhTOms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilometer/hour to Meter/second"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700" />
+
+            <RadioButton
+                android:id="@+id/mhTOks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Mile/hour to Kilometer/second"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+
+                android:textColor="@color/teal_700" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/buttons_background"
+            android:layout_marginEnd="32dp"
+            android:textColor="@color/white"
+            android:text="Convert"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ans_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttons_background"
+            android:gravity="center"
+            android:text="Answer"
+            android:textColor="@color/teal_700"
+            android:textSize="30dp"
+            app:circularflow_radiusInDP="4dp"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+

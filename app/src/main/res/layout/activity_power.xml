@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PowerActivity"
+    android:gravity="center"
+    android:background="@color/teal_700">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:text="Power"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <EditText
+            android:id="@+id/frequnecy_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttons_background"
+            android:gravity="center"
+            android:hint="Enter Unit"
+            android:inputType="numberDecimal"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:textSize="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/input_radio_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="right">
+
+            <RadioButton
+                android:id="@+id/wattTOKwatt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watt to KiloWatt"
+                android:checked="false"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700"/>
+
+            <RadioButton
+                android:id="@+id/kwattTOwatt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilowatt to Watt"
+                android:checked="false"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700"/>
+
+            <RadioButton
+                android:id="@+id/wattTOFootpound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watt to Foot-pound/second "
+                android:checked="false"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700"/>
+
+            <RadioButton
+                android:id="@+id/FpTOwatt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Foot-pound/second to Watt"
+                android:checked="false"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700"/>
+
+
+            <RadioButton
+                android:id="@+id/hpTOwatt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Imperial horsepower(hp) to Watt"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700"/>
+
+            <RadioButton
+                android:id="@+id/wattTOhp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watt to  Imperial horsepower(hp)"
+                android:checked="false"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons_background"
+                android:padding="12dp"
+                android:textColor="@color/teal_700"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/buttons_background"
+            android:layout_marginEnd="32dp"
+            android:textColor="@color/white"
+            android:text="Convert"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/answer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttons_background"
+            android:gravity="center"
+            android:text="Answer"
+            android:textColor="@color/teal_700"
+            android:textSize="30dp"
+            app:circularflow_radiusInDP="4dp"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>
